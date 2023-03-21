@@ -1,0 +1,540 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    padding: 20px 80px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    justify-content: space-between;
+
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.396);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4.5px);
+-webkit-backdrop-filter: blur(4.5px);
+border: 1px solid rgba(255, 255, 255, 0.11);
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    color: #222222;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: .4s ease-in-out;
+}
+
+.navbar #cotizar{
+    color: #0288D1;
+    font-size: 1.1rem;
+    padding: 1px 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: .4s ease-in-out;
+}
+
+.navbar a:hover{
+    color: #7da0ec;
+}
+
+#menu-icon{
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+  
+  .navbar a {
+    position: relative;
+    display: block;
+    padding: 15px;
+  }
+
+  .cover{
+    display: flex;
+    width: 100%;
+    color: #fff;
+    min-height: 100vh;
+    background: url("/assets/background.png");
+    box-sizing: border-box;
+   /*position:absolute;*/
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 1;
+}
+
+.cover .col-8{
+    width: 55%;
+}
+
+.cover .col-8{
+    margin-top: 20%;
+}
+
+.cover .col-8 h1{
+    color: #1F3556;
+    font-size: 40pt;
+    text-align: left;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+}
+
+.cover .col-8 .complement{
+    color: #1F3556;
+    text-transform: none;
+    font-family: 'Montserrat';
+}
+
+.cover .col-8 span{
+    font-weight: 600;
+    color: #0288D1;
+    text-transform: uppercase;
+}
+
+.cover .col-8 p{
+    color: #1F3556;
+    text-align: left;
+    font-size: 15pt;
+    font-family: 'Montserrat';
+}
+
+.cover .col-4{
+    width: 45%;
+}
+
+.cover .col-4 img{
+    margin-top: 40%;
+    width: 100%;
+}
+
+.textOne{
+    background-color: #f4f4f4;
+}
+
+.slider{
+    margin-top: -20px;
+    background-color: #f4f4f4;
+}
+
+section button a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+    
+section button{
+    color: #0288D1;
+    text-decoration: none;
+}
+
+section #buttontext{
+    width: 50%;
+    padding: 16px;
+    cursor: pointer;
+    color: #f4f4f4;
+    font-weight: bold;
+    border-radius: 30px;
+    letter-spacing: 1.4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition-duration: 0.4s;
+    border: 2px solid #0288D1;
+    background-color: transparent;
+}
+
+section #buttontext:hover{
+    background-color: #0288D1;
+}
+
+section #buttontext{
+    color: #0288D1;
+    transition-duration: 0.4s;
+}
+
+section #buttontext:hover{
+    color: #f4f4f4;
+}
+
+.textOne h2{
+    font-size: 25pt;
+    padding: 2%;
+    color: #1F3556;
+    font-weight: 600;
+    font-family: 'Montserrat';
+}
+
+.textOne span{
+    font-size: 25pt;
+    color: #0288D1;
+    font-family: 'Montserrat';
+}
+
+.textOne p{
+    font-size: 20pt;
+    padding: 5%;
+    font-family: 'Montserrat';
+}
+
+.textOne #messageSMS{
+    font-size: 20pt;
+    color: #222222;
+}
+
+.row .col-sm {
+    align-items: center;
+    justify-content: center;
+}
+
+#img{
+    width: 50%;
+}
+
+#img-write, #img-send{
+    width: 34%;
+}
+
+#rows .textA{
+    font-size: 20px;
+}
+
+#number{
+    color: #0288D1;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.slider h2{
+    font-size: 25pt;
+    padding: 2%;
+    color: #1F3556;
+    font-weight: 600;
+    font-family: 'Montserrat';
+}
+
+@keyframes scroll {
+	0% { transform: translateX(0);}
+	100% { transform: translateX(calc(-250px * 7))}
+}
+
+.slide {
+	/*box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);*/
+	height: 100px;
+	margin: auto;
+	overflow:hidden;
+	position: relative;
+	width: 90%;
+}
+	
+.slide-track {
+	animation: scroll 40s linear infinite;
+	display: flex;
+	width: calc(450px * 14);
+}
+
+.ventajas{
+    padding: 5%;
+    color: #f4f4f4;
+    font-family: 'Montserrat';
+    background-color:#1F3556;
+}
+
+.ventajas h2{
+    padding: 4%;
+    text-align: left;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+.list-vent{
+    padding: 60px;
+}
+
+.ventajas h3{
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.ventajas span{
+    font-weight: bold;
+}
+
+.ventajas p{
+    color: #f4f4f4;
+    text-transform: none;
+    text-align: justify;
+}
+
+.ventajas .create, .gratis{
+    color: #f4f4f4;
+    text-transform: none;
+    text-align: center;
+}
+
+.camp{
+    padding: 6%;
+}
+
+.camp h2, span, p{
+    color:#1F3556;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+}
+
+.camp span{
+    color: #0288D1;
+}
+
+.camp p{
+    padding: 4%;
+    font-size: 20px;
+    text-transform: none;
+}
+
+.camp .card{
+    width: 95%;
+    height: 100%;
+    border: none;
+    border-radius: 20px;
+    align-items: center;
+    background-color: #1F3556;   
+}
+
+.camp .card img{
+    width: 60%;
+    margin-top: 12%;
+}
+.camp .card .card-text{
+    color: #f4f4f4;
+    padding: 4%;
+}
+
+.camp .myButton img{
+    width: 20%;
+    margin-top: 5%;
+}
+
+.contacto{
+    padding: 5%;
+}
+
+.contacto #textArea{
+    width: 100%;
+    height: 150px;
+    border-radius: 6px;
+    border: 0.2px solid #22222238;
+}
+
+.contacto .cont-form{
+    padding-left: 5%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    border-radius: 20px;
+    background-color: #f4f4f4;
+}
+
+.contacto label{
+    color: #1F3556;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.contacto h2{
+    margin-top: 8%;
+    font-weight: 600;
+    color: #1F3556;
+    text-transform: uppercase;
+}
+
+.contacto .col-6 h2{
+    color: #0288D1;
+}
+
+.contacto .fa-brands{
+    color: #1F3556;
+    font-size: 80px;
+    letter-spacing: 24px;
+}
+
+footer{
+    padding: 4%;
+    background-color: #0288D1;
+}
+
+footer p{
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+footer a{
+    row-gap: 20px;
+    color: #f4f4f4;
+}
+
+@media (max-width: 1140px){
+
+    section{
+        padding: 10px 2%;
+    }
+
+    #menu-icon{
+        display: initial;
+        color: #0288D1;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: -1400px;
+        left: 0;
+        height: 100vh;
+        right: 0;
+        display:inline-block;
+        align-items: center;
+        justify-content: center;
+        background:#1F3556;
+        transition: .4s ease;
+        
+    }
+    
+    header .navbar.active{
+        top: 70px;
+    }
+    
+    .navbar a{
+        margin-top: 15%;
+        text-align: center;
+        color: #f4f4f4;
+    }
+
+    .cover .col-8 {
+        width: 100%;
+        margin-bottom:-30px;
+    }
+
+    .cover #buttontext{
+        margin: 20%;
+    }
+
+    .cover .col-4{
+        /*background-color: #0288D1;*/
+        width: 100%;
+        margin-top: -100px;
+    }
+
+    .textOne h2{
+        font-size: 20px;
+    }
+
+    .textOne span{
+        font-size: 20px;
+    }
+    
+    .textOne .textP1, #messageSMS{
+        font-size: 15px;
+    }
+
+    .textOne #messageSMS{
+        font-size: 15px;
+    }
+
+    .row .col-sm{
+        width: 100%;
+    }
+
+    .slider h2{
+        font-size: 20px;
+        margin-bottom: 12%;
+    }
+
+    .ventajas{
+        width: 100%;
+    }
+
+    .ventajas h2{
+        font-size: 22px;
+        width: 100%;
+    }
+
+    .ventajas .col-sm-4 li{
+        padding: 0;
+        width: 100%;
+        margin-top: 12%;
+    }
+
+    .camp .card{
+        width: 100%;
+    }
+
+    .camp .myButton img{
+        width: 50%;
+    }
+
+    .contacto{
+        width: 100%;
+    }
+
+    .contacto .row{
+        margin: 0;
+    }
+    
+    .contacto .col-9{
+        width: 100%;
+    }
+
+    .contacto .col-6{
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    .text-start .follow{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .text-start .title{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .contacto .text-start i{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .contacto #text14{
+        text-align:center;
+        font-size: 15px;
+    }
+
+    .contacto .text-start .myButton img{
+        width: 50%;
+        align-items: center;
+    }
+
+    footer a{
+        font-size: 14px;
+    }
+}
