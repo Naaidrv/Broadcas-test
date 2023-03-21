@@ -337,7 +337,8 @@ section #buttontext:hover{
 }
 
 .contacto{
-    padding: 5%;
+    margin-top: -60px;
+    padding-bottom: 10%;
 }
 
 .contacto #textArea{
