@@ -402,7 +402,7 @@ footer a{
     }
 
     #menu-icon{
-        display: initial;
+        display: flex;
         color: #0288D1;
     }
 
@@ -539,5 +539,81 @@ footer a{
 
     footer a{
         font-size: 14px;
+    }
+}
+
+@media (max-width: 768px){
+
+    #rows .textA{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 460px) {
+
+    header img{
+        width: 100%;
+    }
+
+    header {
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        padding: 20px 10px;
+    }
+
+    .col-8{
+        width: 100%;
+    }
+
+
+    .cover .col-8 h1{
+        color: #1F3556;
+        font-size: 20pt;
+        text-align: left;
+        font-weight: bold;
+        font-family: 'Montserrat';
+        text-transform: uppercase;
+    }
+
+    section button a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+        
+    section button{
+        color: #0288D1;
+        text-decoration: none;
+    }
+    
+    section #buttontext{
+        width: 100%;
+        padding: 16px;
+        cursor: pointer;
+        color: #f4f4f4;
+        font-weight: bold;
+        font-size: 13px;
+        border-radius: 30px;
+        letter-spacing: 1.4px;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition-duration: 0.4s;
+        border: 2px solid #0288D1;
+        background-color: transparent;
+    }
+    
+    section #buttontext:hover{
+        background-color: #0288D1;
+    }
+    
+    section #buttontext{
+        color: #0288D1;
+        transition-duration: 0.4s;
+    }
+    
+    section #buttontext:hover{
+        color: #f4f4f4;
     }
 }
